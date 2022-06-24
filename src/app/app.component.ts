@@ -44,6 +44,12 @@ export class AppComponent implements OnInit {
       // this.miArrayDesencriptado = JSON.stringify(decryptedData);
         console.log(decryptedData)
 
+
+        decryptedData.forEach(element => {
+          if (element.CodPermiso === '38ee'){
+            console.log('encontrado')
+          }
+        });
     }
   }
 }
